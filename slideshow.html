@@ -1,13 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+  </head>
+  <body>
+     <textarea id="source">
 # Learn Canvas in 8 hours
 
+---
 ## Summary
 
 _This documents the time I spent learning canvas. The resources I used as well and the road bumps I encountered._
 
+---
 ## What are Kibana Dashboards
 
 ![kibana dashboard image](resources/winlogbeat-dashboard.png)
 
+---
 ## What is Canvas
 
 Canvas is a [kibana plugin](https://www.elastic.co/guide/en/kibana/current/kibana-plugins.html) for visualizing data. It can be used for [Real Time Inforgraphics](https://www.elastic.co/elasticon/conf/2018/sf/creating-canvas-for-real-time-infographics-in-kibana), and Dashboards.
@@ -16,6 +28,7 @@ according to [The Elastic Blog](https://www.elastic.co/blog/elasticon-kibana-can
 
 > Currently available as a technology preview, __Canvas__ is a composable, extensible, creative space for live data. A great complement to Kibana dashboards, Canvas allows you to express your data in a highly polished way, whether it be in the boardroom, the NOC, or on your lobby displays
 
+---
 ### The Coffee display from Elasticon 2018
 
 __The Coffee Display:__
@@ -26,22 +39,26 @@ __The Annotated Coffee Display:__
 
 ![annotated coffe display image](resources/elasticon-canvas-story-elasticoffee-image-annotated.png)
 
+---
 ### Always Up To Date Infographics
 
 __Current Status:__
 
 ![current status image](resources/canvas_example_1.png)
 
+---
 ### Goals
 
 > The goal of Canvas is to be flexible, and allow you to tweak all bits and pieces required to get to the result you desire. Canvas presents you with a blank page to which you can add a selection of elements. These elements can be connected to data and configured with a simple UI. Within the sidebar, you can play with palettes, fonts, background, borders and more. When there’s a style you have to have, but there isn’t a button, Canvas gives you the option of using raw CSS.
 
+---
 ### Technology Preview
 
 [The blog post](https://www.elastic.co/blog/canvas-tech-preview) announcing the __Canvas__ technology preview has this to say... 
 
 >These rough cuts of Canvas are for those with a bit of curiosity, some imagination and a whole lot of crazy.
 
+---
 ## Prerequisites
 
 You have the following software installed...
@@ -50,6 +67,7 @@ You have the following software installed...
 2. [docker](https://www.docker.com/)
 3. [docker-compose](https://docs.docker.com/compose/)
 
+---
 ## Getting started
 
 A docker repo is available to launch a local elastic stack with Canvas enabled.
@@ -62,6 +80,7 @@ A docker repo is available to launch a local elastic stack with Canvas enabled.
 6. `docker-compose up` - _run the elastic stack_
 7. [browse to kibana](http://localhost:5601/app/canvas)
 
+---
 ## Learning Canvas
 
 **NOTE**: Be forewarned that this technology is rapidly developing so you will sometimes encounter documentation that is out of date.
@@ -70,10 +89,12 @@ A docker repo is available to launch a local elastic stack with Canvas enabled.
 * [The video series](https://canvas.elastic.co/videos/index.html) for visual learners.
 * [The Canvas Docs](https://canvas.elastic.co/reference/index.html) : Read the Furnished Materials ;)
 
+---
 ### SQL
 
 [Elastic SQL](https://www.elastic.co/webinars/introduction-to-elasticsearch-sql) can we use as a data source for your __Canvas__ elements.
 
+---
 ### Expression Language
 
 All __Canvas Elements__ are stored as [Elastic Expressions](https://canvas.elastic.co/stories/expression-lifecycle.html)
@@ -82,3 +103,11 @@ Canvas exposes several functions...
 
 1. [The Canvas Functions](https://canvas.elastic.co/reference/index.html)
 2. [TinyMath Functions](https://canvas.elastic.co/reference/tinymath.html)
+    </textarea>
+     <script src="remark/remark-latest.min.js">
+    </script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>
