@@ -2,7 +2,11 @@
 
 ## Summary
 
-This docuemnt documents hte time I spent learning canvas. the resources I used as well and the roadbumps I encountered.
+_This documents the time I spent learning canvas. The resources I used as well and the roadbumps I encountered._
+
+## Waht are Kibana Dashboards
+
+![kibana dashboard image](winlogbeat-dashboard.png)
 
 ## What is Canvas
 
@@ -12,13 +16,18 @@ according to [The Elastic Blog](https://www.elastic.co/blog/elasticon-kibana-can
 
 > Currently available as a technology preview, __Canvas__ is a composable, extensible, creative space for live data. A great complement to Kibana dashboards, Canvas allows you to express your data in a highly polished way, whether it be in the boardroom, the NOC, or on your lobby displays
 
-### The Coffee display from Elasticon 2018...
+### The Coffee display from Elasticon 2018
 
 The Coffee Display:
-![coffe display image](https://www.elastic.co/assets/blt8f3ab8bb150aad60/elasticon-canvas-story-elasticoffee-image.jpg)
+![coffe display image](elasticon-canvas-story-elasticoffee-image.jpg)
 
 The Annotated Coffee Display:
-![annotated coffe display image](https://www.elastic.co/assets/blt149bec70960719d4/Screenshot_3_12_18__9_40_AM.png)
+![annotated coffe display image](elasticon-canvas-story-elasticoffee-image-annotated.png)
+
+### Always Up To Date Infographics
+
+Current Status:
+![current status image](canvas_example_1.png)
 
 ### Goals
 
