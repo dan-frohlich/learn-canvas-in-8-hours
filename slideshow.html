@@ -6,18 +6,24 @@
       img{
         object-fit: contain;
         width: 100%;
-        border: thin solid red;
+        border: thin solid cornflowerblue;
       }
     </style>
   </head>
   <body>
      <textarea id="source">
-# Learn Canvas in 8 hours
+layout: true
+background-image: url(resources/watercolor.jpeg)
+*https://github.com/dan-frohlich/learn-canvas-in-8-hours*
+
+---
+
+# Getting Started With Canvas
 
 ---
 ## Summary
 
-_This documents the time I spent learning canvas. The resources I used as well and the road bumps I encountered._
+_The time I spent learning about canvas, the resources I used and the issues I encountered._
 
 ---
 ## What are Kibana Dashboards
@@ -26,6 +32,16 @@ _This documents the time I spent learning canvas. The resources I used as well a
 
 ---
 ## What is Canvas
+
+* Infographics
+* Reports
+* Presentations
+* Dashboards
+* Digital displays & kiosks
+* Live billboards
+
+---
+## What is Canvas (more formaly)
 
 Canvas is a [kibana plugin](https://www.elastic.co/guide/en/kibana/current/kibana-plugins.html) for visualizing data. It can be used for [Real Time Inforgraphics](https://www.elastic.co/elasticon/conf/2018/sf/creating-canvas-for-real-time-infographics-in-kibana), and Dashboards.
 
@@ -53,7 +69,7 @@ according to [The Elastic Blog](https://www.elastic.co/blog/elasticon-kibana-can
 ---
 ### Goals
 
-> The goal of Canvas is to be flexible, and allow you to tweak all bits and pieces required to get to the result you desire. Canvas presents you with a blank page to which you can add a selection of elements. These elements can be connected to data and configured with a simple UI. Within the sidebar, you can play with palettes, fonts, background, borders and more. When there’s a style you have to have, but there isn’t a button, Canvas gives you the option of using raw CSS.
+> The goal of Canvas is to be flexible, and allow you to tweak all bits and pieces required to get to the result you desire. Canvas presents you with a blank page to which you can add a selection of elements. These elements can be connected to data and configured with a simple UI. Within the sidebar, you can play with palettes, fonts, background, borders and more. When there's a style you have to have, but there isn't a button, Canvas gives you the option of using raw CSS.
 
 ---
 ### Technology Preview
@@ -103,10 +119,24 @@ A docker repo is available to launch a local elastic stack with Canvas enabled.
 
 All __Canvas Elements__ are stored as [Elastic Expressions](https://canvas.elastic.co/stories/expression-lifecycle.html)
 
+The Expression language uses pipes (`|`) to source, manipulate and display data.
+
+```plaintext
+esdocs fields=bytes,@timestamp
+| staticColumn column=total value={math 'sum(bytes)'}
+| head '10'
+| mapColumns column=@timestamp, fn=${getColumn @timestamp | rounddate 'YYYY-MM-DD'}
+```
+
 Canvas exposes several functions...
 
 1. [The Canvas Functions](https://canvas.elastic.co/reference/index.html)
 2. [TinyMath Functions](https://canvas.elastic.co/reference/tinymath.html)
+
+---
+### GO PAINT A PICTURE
+
+[your local canvas](http://localhost:5601/app/canvas)
     </textarea>
      <script src="remark/remark-latest.min.js">
     </script>
