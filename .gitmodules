@@ -1,0 +1,3 @@
+[submodule "kibana_canvas_examples"]
+	path = kibana_canvas_examples
+	url = https://github.com/alexfrancoeur/kibana_canvas_examples.git
