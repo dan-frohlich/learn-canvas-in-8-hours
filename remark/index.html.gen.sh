@@ -8,6 +8,11 @@ cat << END
   <head>
     <style type="text/css">
       /* Slideshow styles */
+      img{
+        object-fit: contain;
+        width: 100%;
+        border: thin solid red;
+      }
     </style>
   </head>
   <body>
